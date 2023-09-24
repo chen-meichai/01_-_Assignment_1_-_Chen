@@ -1,0 +1,7 @@
+TODO:
+
+This file contains all changes I plan to implement based on the feedback I received.
+
+- Add extra spaces to aslign code sections
+- Delete space between the function call to "function" and the parenthesis on line 309
+- Edit the file used to compile documents so it works with the current project
