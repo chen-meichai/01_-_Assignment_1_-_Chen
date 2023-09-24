@@ -141,8 +141,8 @@ We start by computing the total person-years for Kenya, Sweden, and the world.
 
 ```{r q1-create-variables}
 # Create new variable py = total person years for each data set
-world_data$py <- world_data$py.men + world_data$py.women
-kenya_data$py <- kenya_data$py.men + kenya_data$py.women
+world_data$py  <- world_data$py.men + world_data$py.women
+kenya_data$py  <- kenya_data$py.men + kenya_data$py.women
 sweden_data$py <- sweden_data$py.men + sweden_data$py.women
 ```
 
@@ -174,8 +174,8 @@ Then, we use the function created in the previous code chunk to compute the CBR 
 
 ```{r q1-compute-cbr}
 # Compute the CBR for each data set
-world_cbr <- compute_cbr(world_data)
-kenya_cbr <- compute_cbr(kenya_data)
+world_cbr  <- compute_cbr(world_data)
+kenya_cbr  <- compute_cbr(kenya_data)
 sweden_cbr <- compute_cbr(sweden_data)
 
 # Combine CBR into a table
@@ -306,7 +306,7 @@ We start by creating a function that will compute the TFR given a data set
 
 ```{r q3-create-tfr-function}
 # Function to compute the total fertility rate (TFR)
-compute_tfr <- function (pop_data) {
+compute_tfr <- function(pop_data) {
   pop_data %>% 
   group_by(period) %>% 
   summarise(tfr = 5 * sum(asfr)) %>% 
@@ -500,7 +500,7 @@ We then use the above function to compute the age-specific population proportion
 
 ```{r q6-compute-pop-prop}
 # Compute population proportion for each data set
-kenya_asdr <- compute_pop_prop(kenya_asdr)
+kenya_asdr  <- compute_pop_prop(kenya_asdr)
 sweden_asdr <- compute_pop_prop(sweden_asdr)
 ```
 
