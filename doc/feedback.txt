@@ -1,0 +1,13 @@
+
+Assignment 1 Comments:
+
+You could add some extra space to align some code sections. 
+For example, on lines 144-146, you could add a space to make the assignment operators show on a column. 
+While that is not mandatory, it would help make the code look nicer at places. 
+Otherwise, you have identified all parts of the code that did not follow the style (except for a space between the function call to "function" and the parenthesis on line 309), and corrected it appropriately. 
+Also, the new code you included follows the style. Your comments are sufficiently informative.
+
+You copied the files from an example for compiling the document and copying the output to the appropriate folders. 
+Note that you did not edit them to make them work with your project. 
+Also, since you included the options to have the latex pdf compiled to the correct location, the line for moving pdf files becomes unnecessary. 
+If you adjust the notebook name on these scripts (the project compiles correctly).
